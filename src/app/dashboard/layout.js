@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <aside className="hidden lg:flex flex-col w-100 h-screen bg-[#2B2B2B] text-white shadow-2xl fixed">
         <div className="p-6">
           <div className="text-2xl font-bold mb-15 flex">
-            <Image alt="aaft" src="/pedagogy-fav.png" width={40} height={40} className='' />
+            <Image alt="aaft" src="/pedagogy-fav.png" width={40} height={40} className='bg-[#848484] rounded rounded-[50%]' />
             &nbsp; <span style={{ paddingTop: '5px' }}>AAFT Pedagogy</span>
           </div>
           <ul className="space-y-6 text-lg">
