@@ -15,7 +15,7 @@ export default function Login() {
             </div>
             <div className="w-full lg:w-[35%] p-15 ">
               <div className="rounded-[20] bg-[#ffffff] w-full h-auto text-center py-20" >
-                <Image alt="aaft" src="/man-icon.png" width={100} height={100} className='w-35 mx-auto h-auto py-4'/>
+                <Image alt="aaft" src="/pedagogy-logo.webp" width={100} height={100} className='rounded rounded-[50%] w-35 mx-auto h-auto py-4'/>
                 <p className='text-[#000000] text-[30px] font-[ClashDisplay-Bold] font-bold'>Login in to your account</p>
                   <p className='text-[#000000] pb-20'>One tool for all your needs.</p>
                   <button className='bg-[#FD0000] flex mx-auto p-3 rounded-[10] w-[80%] justify-center text-center'><Image alt="aaft" src="/key-icon.png" width={20} height={20} className='h-auto'/> &nbsp; Single Sign-On (SSO)</button>
