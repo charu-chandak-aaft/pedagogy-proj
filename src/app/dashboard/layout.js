@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
                 </li>
               );
             })}
+            <div className="text-xl mt-100 flex bg-[#F9F9F9] text-[#000000]"><Image alt="aaft" src="/logout.png" width={40} height={40} className="w-[40px] h-[40px]" />&nbsp; <span style={{ paddingTop: '5px', cursor: "pointer" }}>Logout</span></div>
           </ul>
         </div>
       </aside>
