@@ -1,27 +1,51 @@
+'use client';
+
 import Image from "next/image";
+import { useSession, signIn, signOut } from "next-auth/react";
+import { useState } from "react";
 
 export default function Home() {
+  const { data: session } = useSession();
+  // const [session] = useState(false);
+
   return (
-    <section className="">
+    <section>
       <div className="mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="w-full lg:w-[65%]">
-              <Image src="/welcome.webp" alt="aaft" width={800} height={600} className="w-full h-auto relative" />
-              <div className='absolute top-[20%] left-[12%]'>
-                <p className='leading-[55px] font-bold text-[50px] font-[ClashDisplay-Bold]'>Welcome to <br />Gogy.</p>
-                <p className='font-[ClashDisplay-Regular] mt-3 text-[20px]'>Where academic blends with dynamic <br />industry landscape.</p>
-              </div>
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="w-full lg:w-[65%] relative">
+            <Image src="/welcome.webp" alt="aaft" width={800} height={600} className="w-full h-auto" />
+            <div className='absolute top-[20%] left-[12%]'>
+              <p className='leading-[55px] font-bold text-[50px]'>Welcome to <br />Gogy.</p>
+              <p className='mt-3 text-[20px]'>Where academic blends with dynamic <br />industry landscape.</p>
             </div>
-            <div className="w-full lg:w-[35%] p-15 ">
-              <div className="rounded-[20] bg-[#ffffff] w-full h-auto text-center py-20" >
-                <Image alt="aaft" src="/man-icon.png" width={100} height={100} className='w-35 mx-auto h-auto py-4'/>
-                <p className='text-[#000000] text-[30px] font-[ClashDisplay-Bold] font-bold'>Login in to your account</p>
-                  <p className='text-[#000000] pb-20'>One tool for all your needs.</p>
-                  <button className='bg-[#FD0000] flex mx-auto p-3 rounded-[10] w-[80%] justify-center text-center'><Image alt="aaft" src="/key-icon.png" width={20} height={20} className='h-auto'/> &nbsp; Single Sign-On (SSO)</button>
-              </div>              
+          </div>
+
+          <div className="w-full lg:w-[35%] p-15">
+            <div className="rounded-[20px] bg-[#ffffff] w-full h-auto text-center py-20">
+              <Image alt="aaft" src="/man-icon.png" width={100} height={100} className='w-35 mx-auto h-auto py-4' />
+              <p className='text-[#000000] text-[30px] font-bold'>Login to your account</p>
+              <p className='text-[#000000] pb-20'>One tool for all your needs.</p>
+              
+              {session ? (
+                <>
+                  <p className="mb-4">Welcome, {session?.user?.name}</p>
+                  <button onClick={() => signOut()} className='bg-gray-700 text-white p-3 rounded-[10px] w-[80%] mx-auto'>
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <button
+                  className='bg-[#FD0000] flex mx-auto p-3 rounded-[10px] w-[80%] justify-center items-center text-white'
+                  onClick={() => signIn("google")}
+                >
+                  <Image alt="key" src="/key-icon.png" width={20} height={20} className='h-auto' />
+                  &nbsp; Single Sign-On (SSO)
+                </button>
+              )}
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 }
