@@ -1,6 +1,8 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
+const allowedDomains = ["aaft.com", "aaft.edu.in", "aeg.edu.in", "asms.edu.in"];
+
 const handler = NextAuth({
   providers: [
     GoogleProvider({
@@ -9,23 +11,26 @@ const handler = NextAuth({
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
-  // callbacks: {
-  //   async session({ session, token }) {
-  //     session.user.id = token.sub;
-  //     return session;
-  //   },
-  // },
   callbacks: {
-    async redirect({ url, baseUrl }) {
-      // Always redirect to /dashboard after login
+    async signIn({ profile }) {
+      const email = profile?.email || "";
+      const domain = email.split("@")[1];
 
+      if (allowedDomains.includes(domain)) {
+        return true; // ✅ allow login
+      }
+
+      return false; // ❌ reject login
+    },
+
+    async redirect({ url, baseUrl }) {
       return `${baseUrl}/dashboard`;
     },
-     async session({ session, token }) {
+
+    async session({ session, token }) {
       session.user.id = token.sub;
       return session;
     },
   },
 });
-
 export { handler as GET, handler as POST };
