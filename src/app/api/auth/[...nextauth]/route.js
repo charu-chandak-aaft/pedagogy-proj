@@ -11,6 +11,7 @@ const handler = NextAuth({
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
+
   callbacks: {
     async signIn({ profile }) {
       const email = profile?.email || "";
@@ -20,6 +21,8 @@ const handler = NextAuth({
         return true; // ✅ allow login
       }
 
+      // Optional: Log or notify invalid login attempt
+      console.warn("Blocked sign-in attempt from:", email);
       return false; // ❌ reject login
     },
 
@@ -32,5 +35,11 @@ const handler = NextAuth({
       return session;
     },
   },
+
+  pages: {
+    signIn: '/', // Redirect back to home if login is rejected
+    error: '/',  // You can customize this if needed
+  },
 });
+
 export { handler as GET, handler as POST };
