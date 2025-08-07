@@ -153,7 +153,7 @@ export default function UserTables() {
                       <tbody>                       
                         <tr className="flex justify-between">
                           <td className="px-4 py-2 w-[14%]">{user.details.programName}</td>
-                          <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view1} &nbsp; &nbsp; &nbsp;<Image alt="aaft" src="/history-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp; {user.details.history}</td>
+                          <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view1} &nbsp; &nbsp; &nbsp;<Image alt="aaft" src="/historyIcon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp; {user.details.history}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view2}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view3}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view4}</td>
@@ -161,7 +161,7 @@ export default function UserTables() {
                         </tr>
                         <tr className="flex justify-between">
                           <td className="px-4 py-2 w-[14%]">{user.details.programName}</td>
-                          <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view1} &nbsp; &nbsp; &nbsp;<Image alt="aaft" src="/history-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp; {user.details.history}</td>
+                          <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view1} &nbsp; &nbsp; &nbsp;<Image alt="aaft" src="/historyIcon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp; {user.details.history}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view2}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view3}</td>
                           <td className="px-4 py-2 flex items-center"><Image alt="aaft" src="/view-icon.png" width={40} height={40} className="w-[10px] h-[10px]" />&nbsp;{user.details.view4}</td>

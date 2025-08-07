@@ -30,7 +30,7 @@ export default function Cards() {
       </div>
 
       <div className='w-full lg:w-[22.5%] bg-[#BE83FF17] p-6 py-10 flex item-center rounded-[10] border border-[#BE83FF]'>
-        <div className='p-1 rounded-[50%] bg-[#BE83FF17] border border-[#BE83FF] w-[60] h-[60] flex items-center justify-center'><Image alt="aaft" src="/man-office.png" width={40} height={40} className="w-[40px] h-[40px]" /></div>
+        <div className='p-1 rounded-[50%] bg-[#BE83FF17] border border-[#BE83FF] w-[60] h-[60] flex items-center justify-center'><Image alt="aaft" src="/manOffice.png" width={40} height={40} className="w-[40px] h-[40px]" /></div>
         <div className='font-[ClashDisplay-Bold] text-[30px] text-[#000000] leading-[30px] ml-5'>32 <br /> <span className='font-[ClashDisplay-Regular] text-[15px]'>Total Faculty</span></div>
       </div>
 

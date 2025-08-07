@@ -17,7 +17,7 @@ export default function Form1() {
           id="options1"
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value)}
-          className="appearance-none bg-no-repeat bg-[url('/d-arrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/7 p-2 mr-3 border border-gray-700 rounded text-[#000000]"
+          className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 2xl:mb-0 lg:mb-5 w-full 2xl:w-1/7 lg:w-1/4 p-2 mr-3 border border-gray-700 rounded text-[#000000]"
           required
         >
           <option value="">Select Entity</option>
@@ -29,7 +29,7 @@ export default function Form1() {
           id="options2"
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value)}
-          className="appearance-none bg-no-repeat bg-[url('/d-arrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/7 p-2 mr-3  border border-gray-700 rounded text-[#000000]"
+          className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full 2xl:w-1/7 lg:w-1/4 p-2 mr-3  border border-gray-700 rounded text-[#000000]"
           required
         >
           <option value="">School Name</option>
@@ -41,7 +41,7 @@ export default function Form1() {
           id="options3"
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value)}
-          className="appearance-none bg-no-repeat bg-[url('/d-arrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/7 p-2 mr-3  border border-gray-700 rounded  text-[#000000]"
+          className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full 2xl:w-1/7 lg:w-1/4 p-2 mr-3  border border-gray-700 rounded  text-[#000000]"
           required
         >
           <option value="">Program Name</option>
@@ -53,7 +53,7 @@ export default function Form1() {
           id="options4"
           value={selectedOption}
           onChange={(e) => setSelectedOption(e.target.value)}
-          className="appearance-none bg-no-repeat bg-[url('/d-arrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/7 p-2 mr-3  border border-gray-700 rounded  text-[#000000]"
+          className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full 2xl:w-1/7 lg:w-1/4 p-2 mr-3  border border-gray-700 rounded  text-[#000000]"
           required
         >
           <option value="">Document Type</option>
@@ -62,7 +62,7 @@ export default function Form1() {
           <option value="data">Raw Data</option>
         </select>
 
-        <input className="mb-2 lg:mb-0 w-full lg:w-1/5 text-sm text-gray-500 border border-gray-700 rounded bg-[#D4D4D4]
+        <input className="mb-2 lg:mb-0 w-full 2xl:w-1/5 lg:w-1/3 text-sm text-gray-500 border border-gray-700 rounded bg-[#D4D4D4]
            file:mr-4 file:py-2 file:px-4
            file:rounded-full file:border-0
            file:text-sm file:font-semibold
@@ -70,7 +70,7 @@ export default function Form1() {
              type="file" />
 
         
-        <button className='mb-2 lg:mb-0 w-full lg:w-1/8 p-1.5 lg:ml-3 border bg-[#000000] border-gray-700 rounded text-[#ffffff]' type="submit">Upload</button>
+        <button className='mb-2 lg:mb-0 w-full 2xl:w-1/7 lg:w-1/5 p-1.5 lg:ml-3 border bg-[#000000] border-gray-700 rounded text-[#ffffff]' type="submit">Upload</button>
 
 
 

@@ -19,7 +19,7 @@ export default function Summary() {
         <select
             value={selectedOption}
             onChange={(e) => setSelectedOption(e.target.value)}
-            className="appearance-none bg-no-repeat bg-[url('/d-arrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/6 px-3 border border-gray-700 rounded text-[#000000] bg-[#e2e2e2]"
+            className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/6 px-3 border border-gray-700 rounded text-[#000000] bg-[#e2e2e2]"
             required
           >
             <option value="">Select Entity</option>
