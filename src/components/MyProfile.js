@@ -8,7 +8,7 @@ export default function Mypro() {
         <div className='flex gap-x-5'>
           <div className='w-1/4 bg-[#F9F9F9] py-8'>
             <div className='relative'>
-              <Image alt="aaft" src="/user-logo.png" width={40} height={40} className="w-[80px] h-[80px] m-auto " />
+              <Image alt="aaft" src="/userLogo.png" width={40} height={40} className="w-[80px] h-[80px] m-auto " />
               <Image alt="aaft" src="/camera.png" width={5} height={5} className="w-[20px] h-[20px] m-auto absolute bottom-[10px] right-[120px]" />
             </div>
             <div className='text-center'>
