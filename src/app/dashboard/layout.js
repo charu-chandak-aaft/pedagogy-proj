@@ -4,6 +4,7 @@ import '../globals.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import UserInfo from "../../components/UserInfo";
 
 const tabs = [
   { label: "Dashboard", image: "/4square.png", path: "/dashboard" },
@@ -58,7 +59,10 @@ export default function RootLayout({ children }) {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 lg:ml-100 bg-[#ffffff] p-6">{children}</main>
+      <main className="flex-1 lg:ml-100 bg-[#ffffff] p-6">
+        <UserInfo />
+        {children}
+        </main>
     </div>
   );
 }
