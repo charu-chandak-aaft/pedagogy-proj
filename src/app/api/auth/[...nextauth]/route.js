@@ -18,12 +18,10 @@ const handler = NextAuth({
       const domain = email.split("@")[1];
 
       if (allowedDomains.includes(domain)) {
-        return true; // ✅ allow login
+        return true;
       }
-
-      // Optional: Log or notify invalid login attempt
       console.warn("Blocked sign-in attempt from:", email);
-      return false; // ❌ reject login
+      return false; 
     },
 
     async redirect({ url, baseUrl }) {
@@ -37,8 +35,8 @@ const handler = NextAuth({
   },
 
   pages: {
-    signIn: '/', // Redirect back to home if login is rejected
-    error: '/',  // You can customize this if needed
+    signIn: '/', 
+    error: '/',  
   },
 });
 
