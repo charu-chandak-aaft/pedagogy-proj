@@ -10,7 +10,7 @@ import Summary from "../../components/Summary";
 export default function Dashboard() {
   
   return (
-    <>
+    <div className="py-6">
       
       <h2 className="text-3xl font-bold mb-4 pl-8 text-[#000000] font-[ClashDisplay-Regular]">
         Dashboard Overview
@@ -18,6 +18,6 @@ export default function Dashboard() {
       <Form1 />
       <Cards />
       <Summary />
-    </>
+    </div>
   );
 }
