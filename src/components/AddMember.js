@@ -5,8 +5,10 @@ import AddMember from './AddMember.js';
 export default function Members() {
   
   return (
-    <div className='m-8 mb-6 mt-0 rounded-[10] p-6 w-[90%] border border-[#707070]'>
+    <div className='m-8 mb-6 mt-0 rounded-[10] p-6 w-[90%] max-w-[1350px] border border-[#707070]'>
         <h2 className='text-[#000000] text-[20px] font-[ClashDisplay-Bold] mb-4'>Add Member (As Campus Director)</h2>
+        <div className="overflow-x-auto">
+        <div className="min-w-[1400px]">
         <form className="ml-2 w-full grid grid-cols-5 gap-5">
           <div className=''>
             <label  className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -88,11 +90,12 @@ export default function Members() {
             <div className='text-[#000000]'>School of Data Science</div>           
           </div>
         </div>
-        <div className='flex gap-[20px] pl-3 mt-10'>
+        <div className='flex gap-[20px] pl-3 mt-10 mb-5'>
           <button className='p-2 rounded-[10px]  w-[100px] text-center text-[#000000] border border-[#000000]'>Cancel</button>
           <button className='p-2 rounded-[10px] bg-[#000000] w-[100px] text-center text-white-700'>Save</button>
         </div>
-        
+       </div> 
+    </div>
     </div>
   );
 }

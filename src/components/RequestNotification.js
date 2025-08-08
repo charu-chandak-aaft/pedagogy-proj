@@ -2,8 +2,8 @@ import Image from 'next/image';
 export default function Notification() {
   
   return (
-    <div className='m-8 mb-6 mt-0 rounded-[10] p-6 w-[90%] border border-[#707070]'>
-        <div className="flex justify-between mb-3">
+    <div className='lg:m-8 m-0 mb-6 mt-0 rounded-[10] lg:p-6  p-1 lg:w-[90%] w-[100%] border border-[#707070]'>
+        <div className="lg:flex justify-between mb-3">
             <h2 className='text-[#000000] text-[20px] font-[ClashDisplay-Bold] mb-4'>All Notification/ Requests</h2> 
             <div className="bg-[#A859FC1A] ml-3 p-1 pt-0 h-[35px] text-[#A859FC] w-[170px] text-center border border-[#A859FC] flex items-center rounded-[5px] mr-3"><Image alt="aaft" src="/query-icon.png" width={40} height={40} className="w-[20px] h-[20px] mx-2 justify-center" /> Raise Request</div>
         </div>

@@ -19,9 +19,9 @@ export default function AccessPage() {
       return <p>Loading...</p>;
     }
   return (
-    <div className="bg-[#000000] ml-[30px] p-[10px] flex justify-between">
-      <h1 className="text-[#ffffff]">Welcome, {session?.user?.name}</h1>
-      <p  className="text-[#ffffff]">Email: {session?.user?.email}</p>
+    <div className="bg-[#2b2b2b] p-[20px] ml-[10px]">
+      <h1 className="text-[#c29a9a]">Welcome, {session?.user?.name}</h1>
+      <p  className="text-[#c29a9a]">Email: {session?.user?.email}</p>
     </div>
   );
 }

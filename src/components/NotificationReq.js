@@ -10,15 +10,15 @@ export default function NotificationReq(){
   };
 
     return(
-        <div className='m-8 mb-6 mt-0 rounded-[10] p-6 w-[90%] border border-[#707070]'>
+        <div className='lg:m-8 m-0 mb-6 mt-0 rounded-[10] lg:p-6  p-1 lg:w-[90%] w-[100%] border border-[#707070]'>
             <h2 className='text-[#000000] text-[20px] font-[ClashDisplay-Bold] mb-4 h-[35px]'>Raise a request</h2> 
             <div className='border border-b[#000000] mb-3'></div>
-            <form className="ml-2 w-full grid grid-cols-5 gap-5">
+            <form className="ml-2 w-full lg:grid lg:grid-cols-5 gap-5">
                 
                 <div className=''>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Select Entity</label>
                     <select
-                    className="bg-[#F6F6F6] h-[35px] w-full rounded text-[#000000]"
+                    className="bg-[#F6F6F6] h-[35px] lg:w-full w-[95%] rounded text-[#000000]"
                     required
                     >
                     <option value="">AAFT Noida</option>
@@ -30,7 +30,7 @@ export default function NotificationReq(){
                 <div className=''>
                     <label  className="block text-sm font-medium text-gray-700 mb-1">Select School</label>
                     <select
-                    className="h-[35px] w-full bg-[#F6F6F6] rounded text-[#000000]"
+                    className="h-[35px] lg:w-full w-[95%] bg-[#F6F6F6] rounded text-[#000000]"
                     required
                     >
                     <option value="">Select School</option>
@@ -42,7 +42,7 @@ export default function NotificationReq(){
                 <div className=''>
                     <label  className="block text-sm font-medium text-gray-700 mb-1">Select Program</label>
                     <select
-                    className="h-[35px] w-full bg-[#F6F6F6] rounded text-[#000000]"
+                    className="h-[35px] lg:w-full w-[95%] bg-[#F6F6F6] rounded text-[#000000]"
                     required
                     >
                     <option value="">Select Program</option>
@@ -53,16 +53,16 @@ export default function NotificationReq(){
                 </div>
                 <div className=''>
                     <label  className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                    <input type="text" placeholder="Name" className="bg-[#F6F6F6] w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]" />
+                    <input type="text" placeholder="Name" className="bg-[#F6F6F6] lg:w-full w-[95%] px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]" />
                 </div>
                 <div className=''>
                     <label  className="block text-sm font-medium text-gray-700 mb-1">Email ID</label>
-                    <input type="email" placeholder="Email ID" className="bg-[#F6F6F6] w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]" />
+                    <input type="email" placeholder="Email ID" className="bg-[#F6F6F6] lg:w-full w-[95%] px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]" />
                 </div>
                 <div className=''>
                     <label  className="block text-sm font-medium text-gray-700 mb-1">Select Document (Need to Update)</label>
                     <select
-                    className="h-[35px] w-full bg-[#F6F6F6] rounded text-[#000000]"
+                    className="h-[35px] lg:w-full w-[95%] bg-[#F6F6F6] rounded text-[#000000]"
                     required
                     >
                     <option value="">Control Access</option>
@@ -81,7 +81,7 @@ export default function NotificationReq(){
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         placeholder="Write.."
-                        className="bg-[#F6F6F6] w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]"
+                        className="bg-[#F6F6F6] lg:w-full w-[95%] px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-200 text-[#000000]"
                     />
                     
                 </div>   

@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
 
       {/* Sidebar for Desktop */}
       <aside className="hidden lg:flex flex-col w-90 h-screen bg-[#2B2B2B] text-white shadow-2xl fixed">
+        <UserInfo />
         <div className="p-6">
           <div className="text-2xl font-bold mb-15 flex">
             <Image alt="aaft" src="/pedagogyFav.png" width={40} height={40} className='bg-[#848484] rounded rounded-[50%]' />
@@ -92,14 +93,14 @@ export default function RootLayout({ children }) {
                 </li>
               );
             })}
-            <div className="text-xl mt-100 flex bg-[#F9F9F9] text-[#000000]"><Image alt="aaft" src="/logout.png" width={40} height={40} className="w-[40px] h-[40px]" />&nbsp; <span style={{ paddingTop: '5px', cursor: "pointer" }}>Logout</span></div>
+            <div className="text-xl mt-80 flex bg-[#F9F9F9] text-[#000000]"><Image alt="aaft" src="/logout.png" width={40} height={40} className="w-[40px] h-[40px]" />&nbsp; <span style={{ paddingTop: '5px', cursor: "pointer" }}>Logout</span></div>
           </ul>
         </div>
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 lg:ml-90 bg-[#ffffff] p-6">
-        <UserInfo />
+      <main className="flex-1 lg:ml-90 bg-[#ffffff] p-6 overflow-x-hidden">
+        {/* <UserInfo /> */}
         {children}
       </main>
     </div>
