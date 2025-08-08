@@ -13,13 +13,13 @@ export default function Summary() {
     };
   
   return (
-    <div className='m-8 mb-6 mt-0 rounded-[5] p-6 w-[90%] border border-[#707070]'>
+    <div className='lg:m-8 m-0 mb-6 mt-0 rounded-[5] p-6 w-[90%] border border-[#707070]'>
       <div className='flex justify-between mb-5'>
         <h2 className='text-[#000000] text-[20px] font-[ClashDisplay-Bold] mb-4'>Document Upload Summary</h2>
         <select
             value={selectedOption}
             onChange={(e) => setSelectedOption(e.target.value)}
-            className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 w-full lg:w-1/6 px-3 border border-gray-700 rounded text-[#000000] bg-[#e2e2e2]"
+            className="appearance-none bg-no-repeat bg-[url('/dArrow.png')] bg-position-[93%_50%] mb-2 lg:mb-0 2xl:w-1/6 lg:w-1/3 w-full px-3 border border-gray-700 rounded text-[#000000] bg-[#e2e2e2]"
             required
           >
             <option value="">Select Entity</option>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Cards() {
 
   return (
-    <div className='p-8 py-6 flex flex-wrap gap-[20px]'>
+    <div className='lg:m-8 m-0 mb-6 mt-0 py-6 flex flex-wrap gap-[20px]'>
       <div className='w-full 2xl:w-[22.5%] lg:w-[30%] bg-[#000000] p-6 py-10 flex item-center rounded-[10]'>
         <div className='p-1 rounded-[50%] bg-[#ffffff] w-[60] h-[60] flex items-center justify-center'>
           <Image alt="aaft" src="/twoIcon.png" width={40} height={40} className="w-[40px] h-[40px]" />

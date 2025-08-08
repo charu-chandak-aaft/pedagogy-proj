@@ -12,7 +12,7 @@ export default function Form1() {
 
   return (
     <div className="">
-      <form onSubmit={handleSubmit} className="bg-[#F6F6F6] p-8 py-6 w-full">
+      <form onSubmit={handleSubmit} className="bg-[#F6F6F6] lg:m-8 m-0 mb-6 mt-0 py-6 w-full">
         <select
           id="options1"
           value={selectedOption}
